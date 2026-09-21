@@ -51,6 +51,7 @@
    "default": "1",
    "fieldname": "published",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Published"
   },
@@ -73,7 +74,7 @@
  ],
  "grid_page_length": 50,
  "links": [],
- "modified": "2026-09-21 14:05:59.685090",
+ "modified": "2026-09-21 14:17:24.768175",
  "modified_by": "Administrator",
  "module": "Compendium",
  "name": "Compendium Page",

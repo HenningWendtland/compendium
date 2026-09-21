@@ -28,6 +28,11 @@ class CompendiumPage(Document):
 			)
 
 
+def on_doctype_update():
+	# validate() gives the readable error; the index also catches concurrent saves
+	frappe.db.add_unique("Compendium Page", ["language", "path"])
+
+
 def slugify(title):
 	"""`Getting Started` → `getting-started`, like the Markdown file names apps ship.
 

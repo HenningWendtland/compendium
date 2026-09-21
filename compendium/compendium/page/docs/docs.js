@@ -38,8 +38,8 @@ frappe.ui.DocsBrowser = class DocsBrowser {
 		this.$tree = $('<div class="docs-tree"></div>').appendTo(this.$sidebar);
 		if (frappe.model.can_create("Compendium Page")) {
 			$(
-				`<button type="button" class="btn btn-default btn-sm docs-new-page">${__(
-					"New Page"
+				`<button type="button" class="btn btn-default btn-sm docs-new-page">${frappe.utils.escape_html(
+					__("New Page")
 				)}</button>`
 			)
 				.on("click", () =>
